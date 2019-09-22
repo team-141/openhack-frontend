@@ -24,6 +24,7 @@ class LoginForm extends Component {
       <div className="div-login">
         <form onSubmit={e => this.handleFormSubmit(e)} className="form">
         <img className="logo"src="./images/logo.svg" alt="Shawee Logo"/>
+        <span className="text-gray">Vamos nessa?</span>
           <Input
             type="text"
             name="email"
@@ -41,6 +42,8 @@ class LoginForm extends Component {
           <Link className="button" to="/dashboard">
             Login
           </Link>
+          <hr className="line"></hr>
+        <Link to="/cadastrar" className="text-gray">Ainda não tem uma conta? Cadastre-se</Link>
         </form>
       </div>
     );
